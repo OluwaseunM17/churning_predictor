@@ -2,8 +2,8 @@ import pandas as pd
 import streamlit as st
 import pickle
 from PIL import Image
-img = Image.open("C:\\Users\\hp\\Downloads\\churn..png")
-model = pickle.load(open("C:\\Users\\hp\\Downloads\\churning.pkl", "rb"))
+img = Image.open("churn.png")
+model = pickle.load(open("churning.pkl", "rb"))
 st.header("Churning Predictor")
 st.image(img)
 st.subheader("Introduction")
